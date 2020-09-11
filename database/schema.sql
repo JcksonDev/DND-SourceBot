@@ -1,0 +1,20 @@
+CREATE DATABASE DiscordDb;
+
+CREATE TABLE Guilds (
+    guildId VARCHAR(100) NOT NULL PRIMARY KEY,
+    guildIdOwner VARCHAR(100) NOT NULL,
+    cmdPrefix VARCHAR(10) DEFAULT '/'
+);
+
+CREATE TABLE Spells (
+    spellName VARCHAR(50) DEFAULT '' NOT NULL PRIMARY KEY,
+    spellLevel VARCHAR(25) DEFAULT '' NOT NULL,
+    castingTime VARCHAR(25) DEFAULT '' NOT NULL,
+    spellRange VARCHAR(25) DEFAULT '' NOT NULL,
+    components VARCHAR(50) DEFAULT '' NOT NULL,
+    duration VARCHAR(50) DEFAULT '' NOT NULL,
+    school VARCHAR(25) DEFAULT '' NOT NULL, 
+    spellDescription VARCHAR(4000) DEFAULT ''  NOT NULL,
+    additionalLevels VARCHAR(100) DEFAULT '' ,
+    class VARCHAR(300) DEFAULT '' NOT NULL
+);
